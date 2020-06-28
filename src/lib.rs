@@ -140,7 +140,7 @@ pub enum Tag {
 }
 
 impl Tag {
-    fn from_str(s: &str) -> Option<Tag> {
+    pub fn from_str(s: &str) -> Option<Tag> {
         match s {
             "a" => Some(Tag::A),
             "abbr" => Some(Tag::ABBR),
